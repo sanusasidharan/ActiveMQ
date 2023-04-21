@@ -1,4 +1,4 @@
-FROM openjdk:8-jre-alpine
+FROM openjdk:11
 WORKDIR /home/alpine
 RUN apk update && apk add wget
 RUN wget -O amq.tar.gz https://archive.apache.org/dist/activemq/5.18.1/apache-activemq-5.18.1-bin.tar.gz && tar -xvf amq.tar.gz
